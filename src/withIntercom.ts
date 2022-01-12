@@ -9,7 +9,7 @@ import {
   withMainApplication,
   withAndroidManifest,
 } from "@expo/config-plugins";
-import fs from "fs/promises";
+import { promises as fs } from "fs";
 
 const checkProjectBuildGradle = ({ contents }: { contents: string }) => {
   const minSdkVersion = parseInt(
